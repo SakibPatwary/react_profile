@@ -5,7 +5,7 @@ import Me from "../../img/Me.png";
 const Projects = () => {
   return (
     <>
-        
+        Projects
         </>
   )
 }
