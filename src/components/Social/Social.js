@@ -7,7 +7,6 @@ const Social = () => {
       <section class="trial-block shadow3" id="ContactUs">
         <div class="height450">
           <div class="section-title text-center">
-            <span class="badge badge-info">Get Started</span>
             <h2>Social Link</h2>
             <span class="section-title-line section-title-line"></span>
           </div>
