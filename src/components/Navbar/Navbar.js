@@ -1,8 +1,8 @@
 import React from 'react'
-import "./head.css";
+import "./navbar.css";
 import Me from "../../img/Me.png";
 
-const Head = () => {
+const Navbar = () => {
   return (
     <div className="i">
       <div className="i-left">
@@ -16,18 +16,17 @@ const Head = () => {
             </div>
           </div>
           <p className="i-desc">
-            I design and develop services for customers of all sizes,
+            I design and develop services of all sizes,
             specializing in creating stylish, modern websites, web services and
             online stores.
           </p>
         </div>
       </div>
       <div className="i-right">
-        <div className="i-bg"></div>
         <img src={Me} alt="" className="i-img" />
       </div>
     </div>
   );
 }
 
-export default Head
+export default Navbar
