@@ -1,67 +1,65 @@
 import React from 'react'
 import './social.css'
+import {FaFacebook,FaTwitter,FaDiscord,FaSnapchat,FaSpotify,FaTelegram, FaInstagram, FaGithub, FaWhatsapp, FaLinkedin} from 'react-icons/fa'
+import {SiGmail} from 'react-icons/si'
 
 const Social = () => {
   return (
     <>
-      <section class="trial-block shadow3" id="ContactUs">
-        <div class="height450">
-          <div class="section-title text-center">
-            <h2>Social Link</h2>
-            <span class="section-title-line section-title-line"></span>
+      <section className="trial-block shadow3 social-bar" id="ContactUs">
+        <div className="height450">
+          <div className="section-title text-center">
+          <h2 style={{fontWeight: '600', paddingTop: '15px', paddingBottom: '0px'}}>Connect With Me!</h2>
+            <span className="section-title-line section-title-line"></span>
           </div>
-          <div class="social-overlap process-scetion mt100">
-            <div class="container">
-              <div class="row justify-content-center">
-                <div class="col-md-10">
-                  <div class="social-bar">
-                    <div class="social-icons mb-3 iconpad text-center">
-                      <a class="slider-nav-item">
-                        <i class="fab fa-facebook"></i>
-                      </a>
-                      <a class="slider-nav-item">
-                        <i class="fab fa-google-plus"></i>
-                      </a>
-                      <a class="slider-nav-item">
-                        <i class="fab fa-twitter"></i>
-                      </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+          <div className="social-overlap process-scetion mt100">
+            <div className="container">
+              <div className="row justify-content-center">
+                <div className="col-md-10">
+                  <div className="social">
+                    <div className="social-icons mb-3 iconpad text-center">
+                      <a href="https://www.facebook.com/sakkurian/"
                         target="_blank"
-                        class="slider-nav-item"
-                      >
-                        <i class="fab fa-instagram"></i>
+                        className="slider-nav-item">
+                        <i className="fab"><FaFacebook/></i>
                       </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+
+                      <a href="mailto: shakibpatwary001@gmail.com"
                         target="_blank"
-                        class="slider-nav-item"
-                      >
-                        <i class="fab fa-linkedin"></i>
+                        className="slider-nav-item">
+                        <i className="fab"><SiGmail/></i>
                       </a>
-                      <a target="_blank" class="slider-nav-item">
-                        <i class="fab fa-pinterest"></i>
-                      </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+
+                      <a href="https://www.instagram.com/_sakiib_/"
                         target="_blank"
-                        class="slider-nav-item"
-                      >
-                        <i class="fab fa-skype"></i>
+                        className="slider-nav-item">
+                        <i className="fab"><FaInstagram/></i>
                       </a>
-                      <a href="#" class="slider-nav-item">
-                        <i class="fab fa-youtube"></i>
-                      </a>
-                      <a href="#" class="behance slider-nav-item">
-                        <i class="fab fa-behance"></i>
-                      </a>
-                      <a
-                        href="https://www.youtube.com/watch?v=_XiOcsj3oNI&t=50s"
+
+                      <a href="https://github.com/SakibPatwary"
                         target="_blank"
-                        class="slider-nav-item"
-                      >
-                        <i class="fab fa-dribbble"></i>
+                        className="slider-nav-item">
+                        <i className="fab"><FaGithub/></i>
                       </a>
+
+                      <a href="https://www.linkedin.com/in/sakib-patwary/"
+                        target="_blank"
+                        className="slider-nav-item">
+                        <i className="fab"><FaLinkedin/></i>
+                      </a>
+
+                      <a href="https://discord.com/channels/@me/864547214205386772"
+                        target="_blank"
+                        className="slider-nav-item">
+                        <i className="fab"><FaDiscord/></i>
+                      </a>
+
+                      <a href="#"
+                        target="_blank"
+                        className="slider-nav-item">
+                        <i className="fab"><FaTelegram/></i>
+                      </a>
+
                     </div>
                   </div>
                 </div>

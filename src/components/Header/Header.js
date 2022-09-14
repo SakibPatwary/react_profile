@@ -9,7 +9,7 @@ const Header = () => {
       <>
       {['sm'].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3 fixed-top">
-          <Container className='px-5' fluid>
+          <Container className='px-5 pt-2 pb-2' fluid>
             <Navbar.Brand style={{fontWeight: '600'}}>SAKIB PATWARY</Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
