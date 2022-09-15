@@ -6,11 +6,12 @@ import Social from "./components/Social/Social";
 
 function App() {
   return (
+    
     <div className="App">
       <Header/>
       <Navbar/>
-      <Social/>
       <Projects/>
+      <Social/>
     </div>
   );
 }
