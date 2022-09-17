@@ -7,7 +7,7 @@ import Navbar from 'react-bootstrap/Navbar';
 const Footer = () => {
   return (
     <>
-        <Navbar  style={{backgroundColor:' red'}} className="mb-3">
+        <Navbar className="mb-3 pt-2">
           <Container className='justify-content-center'>
             <p>Design and Developed &copy; SAKIB 2022</p>
           </Container>
