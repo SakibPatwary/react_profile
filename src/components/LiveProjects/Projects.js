@@ -1,31 +1,57 @@
 import React from 'react'
 import './project.css'
 import Me from '../../img/Me.png'
+import { motion } from "framer-motion"
 
 const Projects = () => {
   return (
     <>
-      <h2 style={{ textAlign: 'center', fontWeight: '600', paddingTop: '60px' }}>My Works & Projects</h2>
+      <h2 style={{ textAlign: 'center', fontWeight: '600', paddingTop: '60px' }}>Works & Projects</h2>
       <div className="main-container">
+      <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    >
+  
       <div className="project-card">
           <img className='project-img' src={Me} />
-          <h3>Card title</h3>
         </div>
+        <p>TGIT Bangladesh</p>
+        </motion.div>
 
-        <div className="project-card">
+        <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    >
+  
+      <div className="project-card">
           <img className='project-img' src={Me} />
-          <h3>Card title</h3>
         </div>
+        <p>TGIT Bangladesh</p>
+        </motion.div>
 
-        <div className="project-card">
+        <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    >
+  
+      <div className="project-card">
           <img className='project-img' src={Me} />
-          <h3>Card title</h3>
         </div>
+        <p>TGIT Bangladesh</p>
+        </motion.div>
 
-        <div className="project-card">
+        <motion.div
+    whileHover={{ scale: 1.1 }}
+    whileTap={{ scale: 0.9 }}
+    >
+  
+      <div className="project-card">
           <img className='project-img' src={Me} />
-          <h3>Card title</h3>
         </div>
+        <p>TGIT Bangladesh</p>
+        </motion.div>
+        
       </div>
       
     </>
