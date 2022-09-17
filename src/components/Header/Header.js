@@ -3,14 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import logo from '../../img/logo.png'
 
 const Header = () => {
   return (
       <>
       {['sm'].map((expand) => (
         <Navbar key={expand} bg="light" expand={expand} className="mb-3 fixed-top">
-          <Container className='px-5 pt-2 pb-2' fluid>
-            <Navbar.Brand style={{fontWeight: '600'}}>SAKIB PATWARY</Navbar.Brand>
+          <Container>
+            <Navbar.Brand><img style={{maxWidth:'220px', maxHeight:'70px'}} src={logo}/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
@@ -22,7 +23,7 @@ const Header = () => {
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Portfolio</Nav.Link>
+                  <Nav.Link href="#action2">Works</Nav.Link>
                   <Nav.Link href="#action3">About</Nav.Link>
                   <Nav.Link href="#action4">Contact</Nav.Link>
                 </Nav>

@@ -3,6 +3,8 @@ import Navbar from "./components/Navbar/Navbar";
 import Header from "./components/Header/Header";
 import Projects from "./components/LiveProjects/Projects";
 import Social from "./components/Social/Social";
+import Footer from "./components/Footer/Footer";
+
 
 function App() {
   return (
@@ -12,6 +14,7 @@ function App() {
       <Navbar/>
       <Projects/>
       <Social/>
+      <Footer/>
     </div>
   );
 }
