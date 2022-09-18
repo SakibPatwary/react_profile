@@ -10,7 +10,6 @@ const Social = () => {
         <div className="height450">
           <div className="section-title text-center">
           <h2 style={{fontWeight: '600', paddingTop: '15px', paddingBottom: '0px'}}>Connect With Me!</h2>
-            <span className="section-title-line section-title-line"></span>
           </div>
           <div className="social-overlap process-scetion mt100">
             <div className="container">

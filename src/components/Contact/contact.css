@@ -1,0 +1,123 @@
+
+  .contact {
+    padding: 15px;
+    padding-bottom: 0px;
+  }
+  
+  button {
+    overflow: hidden;
+  }
+  
+  button, select {
+    text-transform: none;
+  }
+  
+  input {
+    line-height: normal;
+  }
+  
+  textarea {
+    overflow: auto;
+  }
+  
+  #container {
+    margin: 0 auto;
+    max-width: 1000px;
+    max-height: 600px;
+    position: relative;
+    width: 100%;
+  }
+  
+  form {
+    padding: 40px;
+  }
+  
+  .email {
+      float: right;
+      width: 50%;
+  }
+  
+  input[type='text'], [type='email'], select, textarea {
+      background: none;
+    border: none;
+      border-bottom: solid 2px #3d3d3d;
+      color: #000000;
+      font-size: 1.000em;
+    font-weight: 400;
+    letter-spacing: 1px;
+      margin: 0em 0 1.875em 0;
+      padding: 0 0 0.875em 0;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      -ms-box-sizing: border-box;
+      -o-box-sizing: border-box;
+      box-sizing: border-box;
+      -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  input[type='text']:focus, [type='email']:focus, textarea:focus {
+      outline: none;
+      padding: 0 0 0.875em 0;
+  }
+  
+  .message {
+      float: none;
+  }
+  
+  .name {
+      float: left;
+      width: 45%;
+  }
+  
+  
+  select::-ms-expand {
+    display: none;
+  }
+  
+  .subject {
+    width: 100%;
+  }
+  
+  textarea {
+      line-height: 150%;
+      height: 150px;
+      resize: none;
+    width: 100%;
+  }
+  
+  ::-webkit-input-placeholder {
+      color: #020202;
+  }
+  
+  #form_button {
+    background: none;
+    border: solid 2px #3d3d3d;
+    color: #000000;
+    margin-top: 20px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    outline: none;
+    padding: 10px 100px;
+    text-transform: uppercase;
+    -webkit-transition: all 0.3s;
+      -moz-transition: all 0.3s;
+      -ms-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+  }
+  
+  .submit {
+    text-align: center;
+  }
+  
+  #form_button:hover {
+    background: #616161;
+    color: #ffffff;
+  }

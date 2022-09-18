@@ -4,6 +4,8 @@ import Header from "./components/Header/Header";
 import Projects from "./components/LiveProjects/Projects";
 import Social from "./components/Social/Social";
 import Footer from "./components/Footer/Footer";
+import Works from "./components/MyWorks/Works";
+import Contact from "./components/Contact/Contact";
 
 
 function App() {
@@ -14,9 +16,11 @@ function App() {
       <Navbar/>
       <Projects/>
       <Social/>
+      <Works/>
+      <Contact/>
       <Footer/>
     </div>
   );
-}
+ }
 
 export default App;
