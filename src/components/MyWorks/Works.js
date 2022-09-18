@@ -1,17 +1,14 @@
 import React from 'react'
-import $ from 'jquery';
 import './works.css';
 
 const Works = () => {
 
-    
-  return (
-   <>
-   HELLO
-   </>
 
-   
-  )
+  return (
+    <div class="">
+      Works section
+    </div>
+  );
 }
 
 export default Works
