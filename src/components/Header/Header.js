@@ -3,15 +3,15 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import logo from '../../img/logo.png'
+import logo from '../../img/logo.gif'
 
 const Header = () => {
   return (
       <>
       {['sm'].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-3 fixed-top">
+        <Navbar key={expand} style={{backgroundColor:"#E1E1E1"}} expand={expand} className="mb-3 fixed-top">
           <Container>
-            <Navbar.Brand><img style={{maxWidth:'220px', maxHeight:'70px'}} src={logo}/></Navbar.Brand>
+            <Navbar.Brand><img style={{maxWidth:'250px', maxHeight:'100px'}} src={logo}/></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
             <Navbar.Offcanvas
               id={`offcanvasNavbar-expand-${expand}`}
