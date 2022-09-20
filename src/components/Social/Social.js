@@ -1,7 +1,9 @@
 import React from 'react'
+import { motion } from "framer-motion"
 import './social.css'
 import {FaFacebook,FaTwitter,FaDiscord,FaSnapchat,FaSpotify,FaTelegram, FaInstagram, FaGithub, FaWhatsapp, FaLinkedin} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
+import { Container, Row, CardGroup, Card, Form, Button } from 'react-bootstrap'
 
 const Social = () => {
   return (
@@ -67,6 +69,33 @@ const Social = () => {
           </div>
         </div>
       </section>
+
+      <Container fluid>
+        <CardGroup className='justify-content-center pb-5'>
+        <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }} >
+      <Card
+                className="mt-4 mx-2 text-center"
+                style={{ border: "none", backgroundColor: "#e6e6e6"}}
+              >
+                <Card.Body>
+                  <Card.Title style={{fontSize: '18px' }}>+880 1628-279057</Card.Title>
+                </Card.Body>
+              </Card>
+              </motion.div>
+
+              <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }}>
+              <Card
+                className="mt-4 mx-2 text-center"
+                style={{ border: "none", backgroundColor: "#e6e6e6",fontSize: "1px" }}
+              >
+                <Card.Body>
+                  <Card.Title style={{fontSize: '18px' }}>shakibpatwary001@gmail.com</Card.Title>
+                </Card.Body>
+              </Card>
+              </motion.div>
+
+              </CardGroup>
+              </Container>
     </>
   );
 }
