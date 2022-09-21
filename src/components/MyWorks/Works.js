@@ -21,8 +21,10 @@ const Works = () => {
 
         <Row className="justify-content-center">
           
+          
           <Col xs={12} md={3}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a style={{textDecoration:'none'}} href='https://tgitbangladesh.com/'>
               <Card style={{ marginBottom: "10px" , backgroundColor:'#004AAD'}}>
                 <Card.Img
                   cascade
@@ -34,11 +36,13 @@ const Works = () => {
                   <Card.Title style={{fontSize:'15px', textAlign:'center',color:'white'}}>TGIT Bangladesh</Card.Title>
                 </Card.Body>
               </Card>
+              </a>
             </motion.div>
           </Col>
 
           <Col xs={12} md={3}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a style={{textDecoration:'none'}} href='http://unifly-travels.com/'>
               <Card style={{ marginBottom: "10px", backgroundColor:'#389D49' }}>
                 <Card.Img
                   cascade
@@ -50,11 +54,13 @@ const Works = () => {
                   <Card.Title style={{fontSize:'15px', textAlign:'center',color:'white'}}>Unifly Travels</Card.Title>
                 </Card.Body>
               </Card>
+              </a>
             </motion.div>
           </Col>
 
           <Col xs={12} md={3}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a style={{textDecoration:'none'}} href='https://youwineducation.org/'>
               <Card style={{ marginBottom: "10px" , backgroundColor:'#5271FF'}}>
                 <Card.Img
                   cascade
@@ -66,11 +72,13 @@ const Works = () => {
                   <Card.Title style={{fontSize:'15px', textAlign:'center',color:'white'}}>Youwin Education</Card.Title>
                 </Card.Body>
               </Card>
+              </a>
             </motion.div>
           </Col>
 
           <Col xs={12} md={3}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
+            <a style={{textDecoration:'none'}} href='https://asaduzzamanriyad.netlify.app/'>
               <Card style={{ marginBottom: "10px", backgroundColor:'#3B4349' }}>
                 <Card.Img
                   cascade
@@ -82,6 +90,7 @@ const Works = () => {
                   <Card.Title style={{fontSize:'15px', textAlign:'center', color:'white'}}>Asaduzzaman Portfolio</Card.Title>
                 </Card.Body>
               </Card>
+              </a>
             </motion.div>
           </Col>
 

@@ -12,7 +12,7 @@ const Contact = () => {
                         textAlign: 'center'
                     }}>Get in Touch!</h2>
                     
-                    <form action="#" method="post" id="contact_form">
+                    <form action="https://formsubmit.co/shakibpatwary001@gmail.com" method="POST" method="post" id="contact_form">
                         <div className="name">
                             <label for="name"></label>
                             <input type="text" placeholder=" Name" name="name" id="name_input" required />
@@ -28,6 +28,12 @@ const Contact = () => {
                         <div className="message">
                             <label for="message"></label>
                             <textarea name="message" placeholder=" Desire Message" id="message_input" cols="30" rows="5" required></textarea>
+                        </div>
+                        <div>
+                        <input type="hidden" name="_captcha" value="false"/>
+                        </div>
+                        <div>
+                        <input type="hidden" name="_next" value="https://yourdomain.co/thanks.html"/>
                         </div>
                         <div className="submit">
                             <input type="submit" value="submit" id="form_button" />
