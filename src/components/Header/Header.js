@@ -5,7 +5,13 @@ import Navbar from 'react-bootstrap/Navbar';
 import Offcanvas from 'react-bootstrap/Offcanvas';
 import logo from '../../img/logo.gif'
 
+
+import { Document, Page, pdfjs } from "react-pdf";
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.js`;
+
 const Header = () => {
+
+
   return (
       <>
       {['sm'].map((expand) => (
@@ -26,6 +32,9 @@ const Header = () => {
                   <Nav.Link href="#action2">Works</Nav.Link>
                   <Nav.Link href="#action3">About</Nav.Link>
                   <Nav.Link href="#action4">Contact</Nav.Link>
+                  <Nav.Link><button style={{borderRadius:'15px', backgroundColor:"blue", color:'white', border:'none', height:'30px', width:'120px'}}>
+                  <a href={logo} download style={{ margin:"5px"}}> Download CV</a>
+                </button></Nav.Link>
                 </Nav>
               </Offcanvas.Body>
             </Navbar.Offcanvas>

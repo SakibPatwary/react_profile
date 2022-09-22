@@ -3,7 +3,7 @@ import { motion } from "framer-motion"
 import './social.css'
 import {FaFacebook,FaTwitter,FaDiscord,FaSnapchat,FaSpotify,FaTelegram, FaInstagram, FaGithub, FaWhatsapp, FaLinkedin} from 'react-icons/fa'
 import {SiGmail} from 'react-icons/si'
-import { Container, Row, CardGroup, Card, Form, Button } from 'react-bootstrap'
+import { Container, CardGroup, Card, Form, Button } from 'react-bootstrap'
 
 const Social = () => {
   return (
