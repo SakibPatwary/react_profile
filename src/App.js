@@ -5,18 +5,19 @@ import Social from "./components/Social/Social";
 import Footer from "./components/Footer/Footer";
 import Works from "./components/MyWorks/Works";
 import Contact from "./components/Contact/Contact";
+import Tools from "./components/Tools/Tools";
 
 
 function App() {
   return (
-    
     <div className="App">
-      <Header/>
-      <Navbar/> 
-       <Works/>
-      <Social/>
-      <Contact/>
-      <Footer/>
+      <Header />
+      <Navbar />
+      <Tools />
+      <Works />
+      <Social />
+      <Contact />
+      <Footer />
     </div>
   );
  }
