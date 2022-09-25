@@ -8,11 +8,11 @@
 
 .skill-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.16);
-    border-color: #000;
+    border-color: rgb(0, 38, 255);
 }
 
 .skill-card:hover .card-img {
-    border-bottom-color: #000;
+    border-bottom-color: rgb(10, 6, 255);
 }
 
 .skill-card .card-img {
@@ -31,7 +31,11 @@
 }
 
 .skill-card .card-body h4 {
-    color: #000;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     text-align: center;
+}
+
+.skill-section{
+    background-color: rgb(252, 250, 250);
 }

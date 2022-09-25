@@ -6,6 +6,7 @@ import Footer from "./components/Footer/Footer";
 import Works from "./components/MyWorks/Works";
 import Contact from "./components/Contact/Contact";
 import Tools from "./components/Tools/Tools";
+import Skills from "./components/Skills/Skills";
 
 
 function App() {
@@ -13,6 +14,7 @@ function App() {
     <div className="App">
       <Header />
       <Navbar />
+      <Skills/>
       <Tools />
       <Works />
       <Social />

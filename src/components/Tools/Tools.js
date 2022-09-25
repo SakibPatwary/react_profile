@@ -4,7 +4,8 @@ import "./tools.css";
 const Tools = () => {
   return (
     <>
-    <h2 style={{textAlign:'center', fontWeight:'700'}}>Tools</h2>
+    <div className="skill-section">
+    <h2 style={{textAlign:'center', fontWeight:'700'}}>Tools & Skills</h2>
       <div className="mt-4"></div>
       <div className="container">
         <div className="row">
@@ -65,6 +66,7 @@ const Tools = () => {
             </div>
           </div>
         </div>
+      </div>
       </div>
     </>
   );
