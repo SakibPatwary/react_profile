@@ -13,14 +13,14 @@ const Works = () => {
     <>
       <Container
         fluid
-        className="pb-5"
-        tyle={{ paddingTop: "0px", marginTop: "0px" }}
+        className="pb-4"
+        style={{ marginTop: "-150px", backgroundColor: " #e6e6e6" }}
       >
         <h2
           style={{ fontWeight: "bold", paddingTop: "0px", marginTop: "0px" }}
           className="h1-responsive my-5 pt-3 text-center"
         >
-          Skills & Experience
+          WHAT I CAN DO!
         </h2>
 
         <Row className="justify-content-center">

@@ -41,7 +41,7 @@ const Contact = () => {
                             fontSize: '32px',
                             fontWeight: '700',
                             textAlign: 'center'
-                        }}>Get in Touch!</h2>
+                        }}>GET IN TOUCH!</h2>
                             <form ref={form} onSubmit={sendEmail}>
                                 <div className="name">
                                     <label for="name"></label>

@@ -1,16 +1,12 @@
 
 
-* {
-    padding: 0;
-    margin: 0;
-}
-
 .shadow3 {
     background-repeat: no-repeat;
 }
 
 .height450 {
     height: 200px;
+    background-color:  #f2f2f2;
 }
 
 .social-overlap {

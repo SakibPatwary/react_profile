@@ -1,9 +1,17 @@
-import React from 'react'
-import { motion } from "framer-motion"
-import './social.css'
-import {FaFacebook,FaTwitter,FaDiscord,FaSnapchat,FaSpotify,FaTelegram, FaInstagram, FaGithub, FaWhatsapp, FaLinkedin} from 'react-icons/fa'
-import {SiGmail} from 'react-icons/si'
-import { Container, CardGroup, Card, Form, Button } from 'react-bootstrap'
+import React from "react";
+import { motion } from "framer-motion";
+import "./social.css";
+import {
+  FaFacebook,
+  FaDiscord,
+  FaInstagram,
+  FaGithub,
+  FaLinkedin,
+} from "react-icons/fa";
+import { SiGmail } from "react-icons/si";
+import { FcCallback } from "react-icons/fc";
+import { HiMail } from "react-icons/hi";
+import { Container, CardGroup, Card, Form, Button } from "react-bootstrap";
 
 const Social = () => {
   return (
@@ -14,11 +22,11 @@ const Social = () => {
             <h2
               style={{
                 fontWeight: "600",
-                paddingTop: "15px",
-                paddingBottom: "0px",
+                paddingTop: "35px",
+                marginBottom: "-25px",
               }}
             >
-              Connect With Me!
+              DON'T BE A STRANGER<br/> <span style={{fontSize:'15px', fontWeight:'normal'}}>Connect With Me!</span>
             </h2>
           </div>
           <div className="social-overlap process-scetion mt100">
@@ -87,11 +95,8 @@ const Social = () => {
                         </i>
                       </a>
 
-                      <a href="#" target="_blank" className="slider-nav-item">
-                        <i className="fab">
-                          <FaTelegram />
-                        </i>
-                      </a>
+
+
                     </div>
                   </div>
                 </div>
@@ -104,38 +109,45 @@ const Social = () => {
       <Container fluid>
         <CardGroup className="justify-content-center pb-5">
           <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }}>
-            <Card
-              className="mt-4 mx-2 text-center"
-              style={{ border: "none", backgroundColor: "#ffffff" }}
-            >
-              <Card.Body>
-                <Card.Title style={{ fontSize: "18px" }}>
-                  +880 1628-279057
-                </Card.Title>
-              </Card.Body>
-            </Card>
+            <a style={{ textDecoration: "none" , color:'black'}} href="callto: +8801628279057">
+              <Card
+                className="mt-4 mx-2 text-center"
+                style={{ border: "none", backgroundColor: "#cce6ff" }}
+              >
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "18px" }}>
+                    <FcCallback style={{marginRight:'2px'}}></FcCallback>
+                    +880 1628-279057
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </a>
           </motion.div>
 
           <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }}>
-            <Card
-              className="mt-4 mx-2 text-center"
-              style={{
-                border: "none",
-                backgroundColor: "#ffffff",
-                fontSize: "1px",
-              }}
+            <a style={{ textDecoration: "none" , color:'black'}} href="mailto:shakibpatwary001@gmail.com"
             >
-              <Card.Body>
-                <Card.Title style={{ fontSize: "18px" }}>
-                  shakibpatwary001@gmail.com
-                </Card.Title>
-              </Card.Body>
-            </Card>
+              <Card
+                className="mt-4 mx-2 text-center"
+                style={{
+                  border: "none",
+                  backgroundColor: "#ffd6cc",
+                  fontSize: "1px",
+                }}
+              >
+                <Card.Body>
+                  <Card.Title style={{ fontSize: "18px" }}>
+                    <HiMail style={{ color: "red", marginRight:'2px' }}></HiMail>
+                    shakibpatwary001@gmail.com
+                  </Card.Title>
+                </Card.Body>
+              </Card>
+            </a>
           </motion.div>
         </CardGroup>
       </Container>
     </>
   );
-}
+};
 
-export default Social
+export default Social;

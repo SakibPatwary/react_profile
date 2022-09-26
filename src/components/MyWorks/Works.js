@@ -11,18 +11,18 @@ const Works = () => {
 
   return (
     <>
-      <Container className='pb-5' tyle={{ paddingTop:'0px', marginTop:'0px'}}>
+      <Container fluid className='pb-4' style={{ backgroundColor: " #e6e6e6" }}>
         <h2
-          style={{ fontWeight: "bold" , paddingTop:'0px', marginTop:'0px'}}
+          style={{ fontWeight: "bold"}}
           className="h1-responsive my-5 pt-3 text-center"
         >
-          Projects & Works
+          SOME OF MY WORKS
         </h2>
 
         <Row className="justify-content-center">
           
           
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='https://tgitbangladesh.com/'>
               <Card style={{ marginBottom: "10px" , backgroundColor:'#004AAD'}}>
@@ -40,7 +40,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='http://unifly-travels.com/'>
               <Card style={{ marginBottom: "10px", backgroundColor:'#389D49' }}>
@@ -58,7 +58,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='https://youwineducation.org/'>
               <Card style={{ marginBottom: "10px" , backgroundColor:'#5271FF'}}>
@@ -76,7 +76,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={3}>
+          <Col xs={12} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='https://asaduzzamanriyad.netlify.app/'>
               <Card style={{ marginBottom: "10px", backgroundColor:'#3B4349' }}>

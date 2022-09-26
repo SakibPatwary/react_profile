@@ -37,14 +37,19 @@ const Header = () => {
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
+              style={{maxWidth: '60%'}}
             >
-              <Offcanvas.Header closeButton></Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Header closeButton>
+              <Offcanvas.Title style={{fontWeight:'bold'}} id={`offcanvasNavbarLabel-expand-${expand}`}>
+                  Quick Links
+                </Offcanvas.Title>
+              </Offcanvas.Header>
+              <Offcanvas.Body style={{lineHeight:'30px', fontWeight:'bold',marginLeft:'10px'}}>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Works</Nav.Link>
-                  <Nav.Link href="#action3">About</Nav.Link>
-                  <Nav.Link href="#action4">Contact</Nav.Link>
+                  <Nav.Link href="#">Home</Nav.Link>
+                  <Nav.Link href="#">Works</Nav.Link>
+                  <Nav.Link href="#">About</Nav.Link>
+                  <Nav.Link  href="#">Contact</Nav.Link>
                   <Nav.Link>
                     <button
                       onClick={saveFile}
@@ -55,6 +60,7 @@ const Header = () => {
                         border: "none",
                         height: "30px",
                         width: "120px",
+                        marginLeft:'40px',
                       }}
                     >
                       Download CV

@@ -5,8 +5,8 @@ import Social from "./components/Social/Social";
 import Footer from "./components/Footer/Footer";
 import Works from "./components/MyWorks/Works";
 import Contact from "./components/Contact/Contact";
-import Tools from "./components/Tools/Tools";
 import Skills from "./components/Skills/Skills";
+import Experience from "./components/Experience/Experience";
 
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
       <Header />
       <Navbar />
       <Skills/>
-      <Tools />
+      <Experience/>
       <Works />
       <Social />
       <Contact />
