@@ -7,6 +7,7 @@ import Works from "./components/MyWorks/Works";
 import Contact from "./components/Contact/Contact";
 import Skills from "./components/Skills/Skills";
 import Experience from "./components/Experience/Experience";
+import Quotes from "./components/Quotes/Quotes";
 
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
       <Experience/>
       <Works />
       <Social />
+      <Quotes/>
       <Contact />
       <Footer />
     </div>
