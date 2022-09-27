@@ -22,7 +22,7 @@ const Works = () => {
         <Row className="justify-content-center">
           
           
-          <Col xs={12} md={2}>
+          <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='https://tgitbangladesh.com/'>
               <Card style={{ marginBottom: "10px" , backgroundColor:'#004AAD'}}>
@@ -40,7 +40,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={2}>
+          <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='http://unifly-travels.com/'>
               <Card style={{ marginBottom: "10px", backgroundColor:'#389D49' }}>
@@ -58,7 +58,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={2}>
+          <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='https://youwineducation.org/'>
               <Card style={{ marginBottom: "10px" , backgroundColor:'#5271FF'}}>
@@ -76,7 +76,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={2}>
+          <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
             <a style={{textDecoration:'none'}} href='https://asaduzzamanriyad.netlify.app/'>
               <Card style={{ marginBottom: "10px", backgroundColor:'#3B4349' }}>

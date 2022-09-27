@@ -182,7 +182,7 @@ const Experience = () => {
                         <section className="CV-timeline CV-job">
                           <h4 className="CV-timeline-heading">
                             <span className="CV-timeline-heading-title">
-                              Web Developer
+                              Junior Web Developer
                             </span>
                             <span className="CV-timeline-heading-location">
                               TGIT Bangladesh
@@ -195,7 +195,7 @@ const Experience = () => {
                         <section className="CV-timeline CV-job">
                           <h4 className="CV-timeline-heading">
                             <span className="CV-timeline-heading-title">
-                              Junior Web Developer
+                              Part-time Web Developer
                             </span>
                             <span className="CV-timeline-heading-location">
                               TGIT Bangladesh

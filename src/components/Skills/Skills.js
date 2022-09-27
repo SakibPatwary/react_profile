@@ -24,7 +24,7 @@ const Works = () => {
         </h2>
 
         <Row className="justify-content-center">
-          <Col xs={12} md={2}>
+          <Col xs={10} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Card style={{ marginBottom: "10px" }}>
                 <Card.Img cascade className="img-fluid" src={skills1} />
@@ -38,7 +38,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={2}>
+          <Col xs={10} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Card style={{ marginBottom: "10px" }}>
                 <Card.Img cascade className="img-fluid" src={skills4} />
@@ -52,7 +52,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={2}>
+          <Col xs={10} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Card style={{ marginBottom: "10px" }}>
                 <Card.Img cascade className="img-fluid" src={skills2} />
@@ -66,7 +66,7 @@ const Works = () => {
             </motion.div>
           </Col>
 
-          <Col xs={12} md={2}>
+          <Col xs={10} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
               <Card style={{ marginBottom: "10px" }}>
                 <Card.Img cascade className="img-fluid" src={skills3} />
