@@ -6,7 +6,7 @@
 
 .height450 {
     height: 200px;
-    background-color:  #f2f2f2;
+    background-color:  #ffffff;
 }
 
 .social-overlap {
@@ -31,8 +31,8 @@
     flex-direction: column;
     text-align: center;
     border-radius: 15px;
-    background: rgb(247, 247, 247);
-    box-shadow: 0 0 60px rgba(16, 92, 233, 0.15);
+    background: rgb(255, 255, 255);
+    box-shadow: 0 0 60px rgba(255, 255, 255, 0.15);
 }
 
 .iconpad {
@@ -51,18 +51,18 @@
     flex-shrink: 0;
     border-radius: 50%;
     text-align: center;
-    background: rgb(219, 41, 41);
+    background: rgb(255, 255, 255);
     cursor: pointer;
     transition: all .4s ease;
 }
 
 .social-icons a {
     border-radius: 50px;
-    color: #210477;
+    color: #ffffff;
     display: inline-block;
     height: 50px;
     width: 50px;
-    box-shadow: 0 15px 505px rgba(40, 21, 148, 0.15);
+    box-shadow: 0 15px 505px rgba(255, 255, 255, 0.15);
     margin: 15px 15px;
     font-size: 28px;
 }
@@ -91,7 +91,7 @@
     flex-shrink: 0;
     border-radius: 50%;
     text-align: center;
-    background: rgb(241, 241, 241);
+    background: rgb(216, 215, 215);
     cursor: pointer;
     transition: all .4s ease;
 
