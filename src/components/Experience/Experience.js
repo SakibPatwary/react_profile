@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Card, Button } from "react-bootstrap";
+import { Container, Row, Col, Card } from "react-bootstrap";
 import './experience.css'
 import { motion } from "framer-motion";
 import html from "../../img/Svg/html.png";
@@ -22,7 +22,7 @@ const Experience = () => {
       <Container>
         <h2
           style={{ fontWeight: "bold" }}
-          classNameName="h1-responsive my-5 text-center"
+          className="h1-responsive my-5 text-center"
         >
           SKILLS & EXPERIENCE
         </h2>
@@ -31,7 +31,7 @@ const Experience = () => {
           <Col>
             <Card style={{ border: "none" }}>
               <Card.Body>
-                <Row classNameName="justify-content-end">
+                <Row className="justify-content-end">
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
@@ -74,7 +74,7 @@ const Experience = () => {
                   </Col>
                 </Row>
 
-                <Row classNameName="justify-content-end pt-4">
+                <Row className="justify-content-end pt-4">
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
@@ -123,7 +123,7 @@ const Experience = () => {
                   </Col>
                 </Row>
 
-                <Row classNameName="justify-content-end pt-4">
+                <Row className="justify-content-end pt-4">
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
@@ -173,7 +173,7 @@ const Experience = () => {
           </Col>
 
           <Col>
-            <Card style={{border:'none'}} classNameName="pt-4 ">
+            <Card style={{border:'none'}} className="pt-4 ">
               <Card.Body>
                 <main className="CV-page">
                   <div className="CV-grid">
@@ -195,7 +195,7 @@ const Experience = () => {
                         <section className="CV-timeline CV-job">
                           <h4 className="CV-timeline-heading">
                             <span className="CV-timeline-heading-title">
-                              Trainee Web Developer
+                              Junior Web Developer
                             </span>
                             <span className="CV-timeline-heading-location">
                               TGIT Bangladesh

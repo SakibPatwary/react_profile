@@ -7,6 +7,7 @@ import {
   FaInstagram,
   FaGithub,
   FaLinkedin,
+  FaTelegramPlane
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
 import { FcCallback } from "react-icons/fc";
@@ -50,7 +51,7 @@ const Social = () => {
                       </a>
 
                       <a
-                        href="mailto: shakibpatwary001@gmail.com"
+                        href="mailto:shakibpatwary001@gmail.com"
                         target="_blank"
                         className="slider-nav-item"
                       >
@@ -100,15 +101,14 @@ const Social = () => {
                       </a>
 
                       <a
-                        href="https://discord.com/channels/@me/864547214205386772"
+                        href="https://telegram.me/sakibpatwary"
                         target="_blank"
                         className="slider-nav-item"
                       >
                         <i className="fab">
-                          <FaDiscord />
+                          <FaTelegramPlane />
                         </i>
                       </a>
-                      
                     </div>
                   </div>
                 </div>
@@ -123,7 +123,7 @@ const Social = () => {
           <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }}>
             <a
               style={{ textDecoration: "none", color: "black" }}
-              href="callto: +8801628279057"
+              href="callto:+8801628279057"
             >
               <Card
                 className="mt-4 mx-2 text-center"
