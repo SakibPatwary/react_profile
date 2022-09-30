@@ -17,7 +17,7 @@ import { Container, CardGroup, Card} from "react-bootstrap";
 const Social = () => {
   return (
     <>
-      <section className="trial-block shadow3 social-bar" id="ContactUs">
+      <section className="trial-block shadow3 social-bar" id="contact">
         <div className="height450">
           <div className="section-title text-center">
             <h2
@@ -123,7 +123,7 @@ const Social = () => {
           <motion.div whileHover={{ scale: 0.9 }} whileTap={{ scale: 1.1 }}>
             <a
               style={{ textDecoration: "none", color: "black" }}
-              href="callto:+8801628279057"
+              href="tel:+8801628279057"
             >
               <Card
                 className="mt-4 mx-2 text-center"
