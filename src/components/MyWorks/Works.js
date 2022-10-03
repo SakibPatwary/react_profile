@@ -11,7 +11,7 @@ const Works = () => {
 
   return (
     <>
-      <Container fluid className='pb-4' id='works' style={{ backgroundColor: " #e6e6e6" }}>
+      <Container fluid className='pb-4'  id='works' style={{ backgroundColor: " #e6e6e6" }}>
         <h2
           style={{ fontWeight: "bold"}}
           className="h1-responsive my-5 pt-3 text-center"

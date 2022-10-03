@@ -1,21 +1,12 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
-import { saveAs } from "file-saver";
-import logo from '../../img/logo.gif'
-
+import React from "react";
+import Container from "react-bootstrap/Container";
+import Nav from "react-bootstrap/Nav";
+import Navbar from "react-bootstrap/Navbar";
+import Offcanvas from "react-bootstrap/Offcanvas";
+import logo from "../../img/logo.gif";
+import SakibCV from "./SakibCV.pdf";
 
 const Header = () => {
-  const saveFile = ()=> {
-    saveAs(
-      "https://drive.google.com/u/0/uc?id=1JnKRw3jQCbV4p3qpG19yiU4G-wNBYYql&export=download",
-      "SakibCV.pdf"
-    );
-  }
-
-
   return (
     <>
       {["sm"].map((expand) => (
@@ -27,7 +18,7 @@ const Header = () => {
         >
           <Container>
             <Navbar.Brand>
-              <a href='#'>
+              <a href="#">
                 <img
                   style={{ maxWidth: "250px", maxHeight: "100px" }}
                   src={logo}
@@ -57,12 +48,11 @@ const Header = () => {
                 }}
               >
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#works">Works</Nav.Link>
                   <Nav.Link href="#skills">Skills</Nav.Link>
+                  <Nav.Link href="#works">Works</Nav.Link>
                   <Nav.Link href="#contact">Contact</Nav.Link>
-                  <Nav.Link>
+                  <Nav.Link href={SakibCV} download>
                     <button
-                      onClick={saveFile}
                       style={{
                         borderRadius: "15px",
                         backgroundColor: "blue",
@@ -70,7 +60,7 @@ const Header = () => {
                         border: "none",
                         height: "30px",
                         width: "120px",
-                        marginLeft: "40px",
+                        marginLeft: "20px",
                       }}
                     >
                       Download CV
@@ -84,6 +74,6 @@ const Header = () => {
       ))}
     </>
   );
-}
+};
 
-export default Header
+export default Header;

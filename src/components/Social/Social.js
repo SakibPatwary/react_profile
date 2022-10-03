@@ -17,7 +17,7 @@ import { Container, CardGroup, Card} from "react-bootstrap";
 const Social = () => {
   return (
     <>
-      <section className="trial-block shadow3 social-bar" id="contact">
+      <section className="trial-block shadow3 social-bar" id="connect">
         <div className="height450">
           <div className="section-title text-center">
             <h2
