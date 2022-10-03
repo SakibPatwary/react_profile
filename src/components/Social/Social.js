@@ -10,14 +10,14 @@ import {
   FaTelegramPlane
 } from "react-icons/fa";
 import { SiGmail } from "react-icons/si";
-import { FcCallback } from "react-icons/fc";
-import { HiMail } from "react-icons/hi";
 import { Container, CardGroup, Card} from "react-bootstrap";
+import Phone from '../../img/Svg/Phone.png'
+import Mail from '../../img/Svg/Mail.png'
 
 const Social = () => {
   return (
     <>
-      <section className="trial-block shadow3 social-bar" id="contact">
+      <section className="trial-block shadow3 social-bar" id="connect">
         <div className="height450">
           <div className="section-title text-center">
             <h2
@@ -130,8 +130,8 @@ const Social = () => {
                 style={{ border: "none", backgroundColor: "#cce6ff" }}
               >
                 <Card.Body>
-                  <Card.Title style={{ fontSize: "18px" }}>
-                    <FcCallback style={{ marginRight: "2px" }}></FcCallback>
+                  <Card.Title className="c-contact-item" style={{ fontSize: "18px" }}>
+                  <img className="c-icon" src={Phone} alt="" />
                     +880 1628-279057
                   </Card.Title>
                 </Card.Body>
@@ -153,10 +153,8 @@ const Social = () => {
                 }}
               >
                 <Card.Body>
-                  <Card.Title style={{ fontSize: "18px" }}>
-                    <HiMail
-                      style={{ color: "red", marginRight: "2px" }}
-                    ></HiMail>
+                  <Card.Title className="c-contact-item" style={{ fontSize: "18px" }}>
+                  <img className="c-icon" src={Mail} alt="" />
                     shakibpatwary001@gmail.com
                   </Card.Title>
                 </Card.Body>
