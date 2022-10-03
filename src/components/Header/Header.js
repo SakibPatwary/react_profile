@@ -50,7 +50,7 @@ const Header = () => {
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="#skills">Skills</Nav.Link>
                   <Nav.Link href="#works">Works</Nav.Link>
-                  <Nav.Link href="#contact">Contact</Nav.Link>
+                  <Nav.Link href="#connect">Contact</Nav.Link>
                   <Nav.Link href={SakibCV} download>
                     <button
                       style={{

@@ -7,9 +7,9 @@ import {
   FaInstagram,
   FaGithub,
   FaLinkedin,
-  FaTelegramPlane
+  FaTelegramPlane,
+  FaWhatsapp,
 } from "react-icons/fa";
-import { SiGmail } from "react-icons/si";
 import { Container, CardGroup, Card} from "react-bootstrap";
 import Phone from '../../img/Svg/Phone.png'
 import Mail from '../../img/Svg/Mail.png'
@@ -51,12 +51,12 @@ const Social = () => {
                       </a>
 
                       <a
-                        href="mailto:shakibpatwary001@gmail.com"
+                        href="https://wa.me/+8801628279057"
                         target="_blank"
                         className="slider-nav-item"
                       >
                         <i className="fab">
-                          <SiGmail />
+                          <FaWhatsapp />
                         </i>
                       </a>
 
@@ -130,8 +130,11 @@ const Social = () => {
                 style={{ border: "none", backgroundColor: "#cce6ff" }}
               >
                 <Card.Body>
-                  <Card.Title className="c-contact-item" style={{ fontSize: "18px" }}>
-                  <img className="c-icon" src={Phone} alt="" />
+                  <Card.Title
+                    className="c-contact-item"
+                    style={{ fontSize: "18px", margin: "0px" }}
+                  >
+                    <img className="c-icon" src={Phone} alt="" />
                     +880 1628-279057
                   </Card.Title>
                 </Card.Body>
@@ -153,8 +156,11 @@ const Social = () => {
                 }}
               >
                 <Card.Body>
-                  <Card.Title className="c-contact-item" style={{ fontSize: "18px" }}>
-                  <img className="c-icon" src={Mail} alt="" />
+                  <Card.Title
+                    className="c-contact-item"
+                    style={{ fontSize: "18px", margin: "0px" }}
+                  >
+                    <img className="c-icon" src={Mail} alt="" />
                     shakibpatwary001@gmail.com
                   </Card.Title>
                 </Card.Body>
