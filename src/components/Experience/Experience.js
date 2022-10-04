@@ -36,7 +36,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={html} />
@@ -46,7 +46,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={css} />
@@ -56,7 +56,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={js} />
@@ -66,7 +66,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={react} />
@@ -79,7 +79,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img
@@ -92,7 +92,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img
@@ -105,7 +105,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={git} />
@@ -115,7 +115,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={figma} />
@@ -128,7 +128,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={canva} />
@@ -138,7 +138,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={ai} />
@@ -148,7 +148,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img style={{ borderRadius: "50%" }} src={ps} />
@@ -158,7 +158,7 @@ const Experience = () => {
                   <Col xs={3} md={2}>
                     <motion.div
                       whileHover={{ scale: 1.1 }}
-                      whileTap={{ scale: 0.9 }}
+                
                     >
                       <Card style={{ border: "none" }}>
                         <Card.Img

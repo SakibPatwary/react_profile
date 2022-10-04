@@ -8,12 +8,8 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <Header />
-        <main>
-          <Routes>
-            <Route path="/" element={<HomeScreen />} />
-          </Routes>
-        </main>
+        <Header/>
+        <HomeScreen />
         <Footer />
       </Router>
       
