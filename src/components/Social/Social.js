@@ -1,23 +1,21 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./social.css";
-import {
-  FaFacebook,
-  FaDiscord,
-  FaInstagram,
-  FaGithub,
-  FaLinkedin,
-  FaTelegramPlane,
-  FaWhatsapp,
-} from "react-icons/fa";
 import { Container, CardGroup, Card} from "react-bootstrap";
 import Phone from '../../img/Svg/Phone.png'
 import Mail from '../../img/Svg/Mail.png'
+import facebook from '../../img/Svg/facebook.png'
+import twitter from '../../img/Svg/twitter.png'
+import github from '../../img/Svg/github.png'
+import telegram from '../../img/Svg/telegram.png'
+import discord from '../../img/Svg/discord.png'
+import instagram from '../../img/Svg/instagram.png'
+import linkedIn from '../../img/Svg/linkedIn.png'
 
 const Social = () => {
   return (
     <>
-      <section className="trial-block shadow3 social-bar" id="connect">
+      <section className="trial-block shadow3 social-bar" id="contact">
         <div className="height450">
           <div className="section-title text-center">
             <h2
@@ -45,19 +43,15 @@ const Social = () => {
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaFacebook />
-                        </i>
+                        <img className="s-icon" src={facebook} alt="facebook icon" />
                       </a>
 
                       <a
-                        href="https://wa.me/+8801628279057"
+                        href="https://twitter.com/Iamsakib5"
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaWhatsapp />
-                        </i>
+                         <img className="s-icon" src={twitter} alt="twitter icon" />
                       </a>
 
                       <a
@@ -65,9 +59,7 @@ const Social = () => {
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaGithub />
-                        </i>
+                         <img className="s-icon" src={github} alt="github icon" />
                       </a>
 
                       <a
@@ -75,9 +67,7 @@ const Social = () => {
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaInstagram />
-                        </i>
+                         <img className="s-icon" src={instagram} alt="instagram icon" />
                       </a>
 
                       <a
@@ -85,9 +75,7 @@ const Social = () => {
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaLinkedin />
-                        </i>
+                         <img className="s-icon" src={linkedIn} alt="linkedIn icon" />
                       </a>
 
                       <a
@@ -95,9 +83,7 @@ const Social = () => {
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaDiscord />
-                        </i>
+                         <img className="s-icon" src={discord} alt="discord icon" />
                       </a>
 
                       <a
@@ -105,9 +91,7 @@ const Social = () => {
                         target="_blank"
                         className="slider-nav-item"
                       >
-                        <i className="fab">
-                          <FaTelegramPlane />
-                        </i>
+                         <img className="s-icon" src={telegram} alt=" telegram icon" />
                       </a>
                     </div>
                   </div>

@@ -1,14 +1,14 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import HomeScreen from "./HomeScreen";
+import Topbar from "./components/Topbar/Topbar";
 
 
 function App() {
   return (
     <div className="App">
       <Router>
-        <Header/>
+        <Topbar/>
         <HomeScreen />
         <Footer />
       </Router>

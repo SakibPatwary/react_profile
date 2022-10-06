@@ -24,7 +24,7 @@ const Works = () => {
           
           <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='https://tgitbangladesh.com/'>
+            <a style={{textDecoration:'none'}} href='https://tgitbangladesh.com/' target="_blank">
               <Card style={{ marginBottom: "10px" , backgroundColor:'#004AAD'}}>
                 <Card.Img
                   cascade
@@ -42,7 +42,7 @@ const Works = () => {
 
           <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='http://unifly-travels.com/'>
+            <a style={{textDecoration:'none'}} href='http://unifly-travels.com/' target="_blank">
               <Card style={{ marginBottom: "10px", backgroundColor:'#389D49' }}>
                 <Card.Img
                   cascade
@@ -60,7 +60,7 @@ const Works = () => {
 
           <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='https://youwineducation.org/'>
+            <a style={{textDecoration:'none'}} href='https://youwineducation.org/' target="_blank">
               <Card style={{ marginBottom: "10px" , backgroundColor:'#5271FF'}}>
                 <Card.Img
                   cascade
@@ -78,7 +78,7 @@ const Works = () => {
 
           <Col xs={9} md={2}>
             <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='https://asaduzzamanriyad.netlify.app/'>
+            <a style={{textDecoration:'none'}} href='https://asaduzzamanriyad.netlify.app/' target="_blank">
               <Card style={{ marginBottom: "10px", backgroundColor:'#3B4349' }}>
                 <Card.Img
                   cascade
