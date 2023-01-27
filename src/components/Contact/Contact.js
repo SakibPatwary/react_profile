@@ -69,7 +69,7 @@ const Contact = () => {
                 
                  ):(
                 <div>
-                    <h3 style={{fontSize: '25px',
+                    <h3 style={{fontSize: '23px',
                     color:'#0000b3',
                     marginBottom:'50px',
                     marginTop: '0px',
