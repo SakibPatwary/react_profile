@@ -1,4 +1,4 @@
-This is my own portfolio website and live on: https://www.sakibpatwary.live/
+This is my own portfolio website.
 
 
 # Getting Started with Create React App
