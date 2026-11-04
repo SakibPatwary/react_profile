@@ -1,19 +1,13 @@
 import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
 
-
-const Footer = () => {
-  return (
-    <>
-        <Navbar className="pt-4">
-          <Container className='justify-content-center'>
-            <p>Design and Developed &copy; <span style={{fontWeight:'bold'}}>SAKIB</span> 2022</p>
-          </Container>
-        </Navbar>
-    </>
-  )
-}
+const Footer = () => (
+  <footer className="site-footer">
+    <div className="page-container footer-inner">
+      <p>Designed &amp; developed by <strong>SAKIB</strong></p>
+      <a href="#top">Back to top <span aria-hidden="true">↑</span></a>
+      <small>© 2022</small>
+    </div>
+  </footer>
+)
 
 export default Footer

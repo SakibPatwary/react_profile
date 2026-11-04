@@ -1,104 +1,43 @@
 import React from 'react'
-import { Container, Row, Col, Card} from 'react-bootstrap'
-import { motion } from "framer-motion"
 import tgit from "../../img/works/tgit.png"
 import asaduzzaman from "../../img/works/asaduzzaman.png"
 import unifly from "../../img/works/unifly.png"
 import youwin from "../../img/works/youwin.png"
 
-const Works = () => {
+const projects = [
+  { name: 'TGIT Bangladesh', image: tgit, url: 'https://tgitbangladesh.com/', type: 'Web development', color: 'blue' },
+  { name: 'Unifly Travels', image: unifly, url: 'http://unifly-travels.com/', type: 'Travel platform', color: 'mint' },
+  { name: 'Youwin Education', image: youwin, url: 'https://youwineducation.org/', type: 'Education', color: 'orange' },
+  { name: 'Asaduzzaman Portfolio', image: asaduzzaman, url: 'https://asaduzzamanriyad.netlify.app/', type: 'Personal portfolio', color: 'lilac' },
+]
 
-
-  return (
-    <>
-      <Container fluid className='pb-4'  id='works' style={{ backgroundColor: " #e6e6e6" }}>
-        <h2
-          style={{ fontWeight: "bold"}}
-          className="h1-responsive my-5 pt-3 text-center"
-        >
-          SOME OF MY WORKS
-        </h2>
-
-        <Row className="justify-content-center">
-          
-          
-          <Col xs={9} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='https://tgitbangladesh.com/' target="_blank">
-              <Card style={{ marginBottom: "10px" , backgroundColor:'#004AAD'}}>
-                <Card.Img
-                  cascade
-                  className="img-fluid"
-                  src={tgit}
-                />
-
-                <Card.Body cascade>
-                  <Card.Title style={{fontSize:'15px', textAlign:'center',color:'white'}}>TGIT Bangladesh</Card.Title>
-                </Card.Body>
-              </Card>
-              </a>
-            </motion.div>
-          </Col>
-
-          <Col xs={9} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='http://unifly-travels.com/' target="_blank">
-              <Card style={{ marginBottom: "10px", backgroundColor:'#389D49' }}>
-                <Card.Img
-                  cascade
-                  className="img-fluid"
-                  src={unifly}
-                />
-
-                <Card.Body cascade>
-                  <Card.Title style={{fontSize:'15px', textAlign:'center',color:'white'}}>Unifly Travels</Card.Title>
-                </Card.Body>
-              </Card>
-              </a>
-            </motion.div>
-          </Col>
-
-          <Col xs={9} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='https://youwineducation.org/' target="_blank">
-              <Card style={{ marginBottom: "10px" , backgroundColor:'#5271FF'}}>
-                <Card.Img
-                  cascade
-                  className="img-fluid"
-                  src={youwin}
-                />
-
-                <Card.Body cascade>
-                  <Card.Title style={{fontSize:'15px', textAlign:'center',color:'white'}}>Youwin Education</Card.Title>
-                </Card.Body>
-              </Card>
-              </a>
-            </motion.div>
-          </Col>
-
-          <Col xs={9} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.9 }}>
-            <a style={{textDecoration:'none'}} href='https://asaduzzamanriyad.netlify.app/' target="_blank">
-              <Card style={{ marginBottom: "10px", backgroundColor:'#3B4349' }}>
-                <Card.Img
-                  cascade
-                  className="img-fluid"
-                  src={asaduzzaman}
-                />
-
-                <Card.Body cascade>
-                  <Card.Title style={{fontSize:'15px', textAlign:'center', color:'white'}}>Asaduzzaman Portfolio</Card.Title>
-                </Card.Body>
-              </Card>
-              </a>
-            </motion.div>
-          </Col>
-
-          
-        </Row>
-      </Container>
-    </>
-  );
-}
+const Works = () => (
+  <section className="work-section" id="works">
+    <div className="page-container mx-auto w-full max-w-6xl">
+      <div className="section-heading section-heading-left">
+        <span className="section-kicker">A FEW THINGS I’VE MADE</span>
+        <h2>Selected work<span className="heading-period">.</span></h2>
+        <p>A selection of projects I’ve helped bring to life.</p>
+      </div>
+      <div className="project-grid grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
+        {projects.map((project, index) => (
+          <div key={project.name} className="project-column">
+            <a className={`project-card group project-${project.color} focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-[#176b61]`} href={project.url} target="_blank" rel="noreferrer">
+              <div className="project-image-wrap">
+                <img src={project.image} alt={`${project.name} website preview`} loading="lazy" />
+                <span className="project-number">0{index + 1}</span>
+                <span className="project-arrow" aria-hidden="true">↗</span>
+              </div>
+              <div className="project-info">
+                <span>{project.type}</span>
+                <h3>{project.name}</h3>
+              </div>
+            </a>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)
 
 export default Works

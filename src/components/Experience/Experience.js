@@ -1,7 +1,4 @@
 import React from "react";
-import { Container, Row, Col, Card } from "react-bootstrap";
-import './experience.css'
-import { motion } from "framer-motion";
 import html from "../../img/Svg/html.png";
 import css from "../../img/Svg/css.png";
 import js from "../../img/Svg/js.png";
@@ -15,208 +12,48 @@ import ps from "../../img/Svg/ps.png";
 import filmora from "../../img/Svg/filmora.png";
 import framer from "../../img/Svg/framer.png";
 
+const tools = [
+  ["HTML", html], ["CSS", css], ["JavaScript", js], ["React", react],
+  ["Bootstrap", bootstrap], ["Framer", framer], ["Git", git], ["Figma", figma],
+  ["Canva", canva], ["Illustrator", ai], ["Photoshop", ps], ["Filmora", filmora],
+];
 
-const Experience = () => {
-  
-  return (
-    <>
-      <Container id="experience">
-        <h2
-          style={{ fontWeight: "bold" }}
-          className="h1-responsive my-5 text-center"
-        >
-          SKILLS & EXPERIENCE
-        </h2>
+const roles = [
+  { title: "Junior Web Developer", company: "TGIT Bangladesh", period: "May 2022 — Present" },
+  { title: "Part-time Web Developer", company: "TGIT Bangladesh", period: "January 2022 — April 2022" },
+];
 
-        <Row xs={1} md={2}>
-          <Col>
-            <Card style={{ border: "none" }}>
-              <Card.Body>
-                <Row className="justify-content-end">
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={html} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={css} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={js} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={react} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                </Row>
-
-                <Row className="justify-content-end pt-4">
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img
-                          style={{ borderRadius: "50%" }}
-                          src={bootstrap}
-                        />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img
-                          style={{ borderRadius: "50%" }}
-                          src={framer}
-                        />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={git} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={figma} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                </Row>
-
-                <Row className="justify-content-end pt-4">
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={canva} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={ai} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img style={{ borderRadius: "50%" }} src={ps} />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                  <Col xs={3} md={2}>
-                    <motion.div
-                      whileHover={{ scale: 1.1 }}
-                
-                    >
-                      <Card style={{ border: "none" }}>
-                        <Card.Img
-                          style={{ borderRadius: "50%" }}
-                          src={filmora}
-                        />
-                      </Card>
-                    </motion.div>
-                  </Col>
-                </Row>
-              </Card.Body>
-            </Card>
-          </Col>
-
-          <Col>
-            <Card style={{border:'none'}} className="pt-4 ">
-              <Card.Body>
-                <main className="CV-page">
-                  <div className="CV-grid">
-                    <div className="CV-grid-column">
-                      <div className="CV-jobs">
-                        <section className="CV-timeline CV-job">
-                          <h4 className="CV-timeline-heading">
-                            <span className="CV-timeline-heading-title">
-                              Junior Web Developer
-                            </span>
-                            <span className="CV-timeline-heading-location">
-                              TGIT Bangladesh
-                            </span>
-                            <small className="CV-timeline-heading-duration">
-                              May 2022 - Present
-                            </small>
-                          </h4>
-                        </section>
-                        <section className="CV-timeline CV-job">
-                          <h4 className="CV-timeline-heading">
-                            <span className="CV-timeline-heading-title">
-                              Part-time Web Developer
-                            </span>
-                            <span className="CV-timeline-heading-location">
-                              TGIT Bangladesh
-                            </span>
-                            <small className="CV-timeline-heading-duration">
-                              January 2022 - April 2022
-                            </small>
-                          </h4>
-                        </section>
-                      </div>
-                    </div>
-                  </div>
-                </main>
-              </Card.Body>
-            </Card>
-          </Col>
-        </Row>
-      </Container>
-    </>
-  );
-};
+const Experience = () => (
+  <section className="experience-section" id="experience">
+    <div className="page-container">
+      <div className="section-heading section-heading-left">
+        <span className="section-kicker">THE TOOLKIT & THE JOURNEY</span>
+        <h2>Skills & experience<span className="heading-period">.</span></h2>
+        <p>Tools I use to shape useful, polished digital products.</p>
+      </div>
+      <div className="experience-layout">
+        <div className="tool-panel">
+          <h3 className="panel-label">TOOLS I WORK WITH</h3>
+          <div className="tool-grid">
+            {tools.map(([name, image]) => <div className="tool-item" key={name}><img src={image} alt="" loading="lazy" /><span>{name}</span></div>)}
+          </div>
+        </div>
+        <div className="timeline-panel">
+          <h3 className="panel-label">EXPERIENCE</h3>
+          <div className="experience-timeline">
+            {roles.map((role) => (
+              <article className="experience-role" key={role.title}>
+                <span className="timeline-marker" />
+                <span className="role-period">{role.period}</span>
+                <h4>{role.title}</h4>
+                <p>{role.company}</p>
+              </article>
+            ))}
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+);
 
 export default Experience;

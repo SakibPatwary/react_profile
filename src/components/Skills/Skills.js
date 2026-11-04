@@ -1,89 +1,38 @@
 import React from 'react'
-import { Container, Row, Col, Card} from 'react-bootstrap'
-import { motion } from "framer-motion"
 import skills1 from "../../img/skills/skills1.png"
 import skills2 from "../../img/skills/skills2.png"
 import skills3 from "../../img/skills/skills3.png"
-import skills4 from "../../img/skills/skills4.png";
+import skills4 from "../../img/skills/skills4.png"
 
-const Works = () => {
+const capabilities = [
+  { title: 'Frontend development', image: skills1, number: '01' },
+  { title: 'Software engineering', image: skills4, number: '02' },
+  { title: 'UI/UX design', image: skills2, number: '03' },
+  { title: 'Graphic design', image: skills3, number: '04' },
+]
 
+const Skills = () => (
+  <section className="skill-section" id="skills">
+    <div className="page-container mx-auto w-full max-w-6xl">
+      <div className="section-heading section-heading-center">
+        <span className="section-kicker">WHAT I DO</span>
+        <h2>Ideas into interfaces<span className="heading-period">.</span></h2>
+        <p>A blend of design thinking and practical development.</p>
+      </div>
+      <div className="skill-grid grid grid-cols-2 gap-4 lg:grid-cols-4">
+        {capabilities.map((item) => (
+          <div key={item.title} className="skill-column">
+            <article className="skill-card group transition duration-200">
+              <div className="skill-image"><img src={item.image} alt="" loading="lazy" /></div>
+              <span className="skill-number">{item.number}</span>
+              <h3>{item.title}</h3>
+              <span className="skill-line transition-all duration-200 group-hover:w-12" />
+            </article>
+          </div>
+        ))}
+      </div>
+    </div>
+  </section>
+)
 
-  return (
-    <>
-      <Container
-        fluid
-        id='skills'
-        className="pb-4"
-        style={{ marginTop: "-150px", backgroundColor: " #e6e6e6" }}
-      >
-        <h2
-          style={{ fontWeight: "bold", paddingTop: "0px", marginTop: "0px" }}
-          className="h1-responsive my-5 pt-3 text-center"
-        >
-          WHAT I CAN DO!
-        </h2>
-
-        <Row className="justify-content-center">
-          <Col xs={10} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <Card style={{ marginBottom: "10px", borderRadius: "10%" }}>
-                <Card.Img cascade className="img-fluid" src={skills1} />
-
-                <Card.Body cascade>
-                  <Card.Title style={{ fontSize: "15px", textAlign: "center" }}>
-                    Frontend Development
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </motion.div>
-          </Col>
-
-          <Col xs={10} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <Card style={{ marginBottom: "10px", borderRadius: "10%" }}>
-                <Card.Img cascade className="img-fluid" src={skills4} />
-
-                <Card.Body cascade>
-                  <Card.Title style={{ fontSize: "15px", textAlign: "center" }}>
-                    Software Engineering
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </motion.div>
-          </Col>
-
-          <Col xs={10} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <Card style={{ marginBottom: "10px", borderRadius: "10%" }}>
-                <Card.Img cascade className="img-fluid" src={skills2} />
-
-                <Card.Body cascade>
-                  <Card.Title style={{ fontSize: "15px", textAlign: "center" }}>
-                    UI/UX Design
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </motion.div>
-          </Col>
-
-          <Col xs={10} md={2}>
-            <motion.div whileHover={{ scale: 1.1 }}>
-              <Card style={{ marginBottom: "10px", borderRadius: "10%" }}>
-                <Card.Img cascade className="img-fluid" src={skills3} />
-
-                <Card.Body cascade>
-                  <Card.Title style={{ fontSize: "15px", textAlign: "center" }}>
-                    Graphics Design
-                  </Card.Title>
-                </Card.Body>
-              </Card>
-            </motion.div>
-          </Col>
-        </Row>
-      </Container>
-    </>
-  );
-}
-
-export default Works
+export default Skills

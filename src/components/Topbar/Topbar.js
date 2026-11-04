@@ -1,33 +1,39 @@
-import React from 'react'
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import logo from "../../img/logo.gif";
-import SakibCV from "./SakibCV.pdf";
+import React, { useState } from 'react'
+import logo from "../../img/logo.png";
+
+const links = [
+  { href: '#skills', label: 'Expertise' },
+  { href: '#experience', label: 'Experience' },
+  { href: '#works', label: 'Selected work' },
+]
 
 const Topbar = () => {
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const closeMenu = () => setMenuOpen(false)
+
   return (
-    <>
-        <Navbar collapseOnSelect expand="lg" className=" fixed-top" style={{ backgroundColor: "#E1E1E1" }}>
-      <Container flex>
-        <Navbar.Brand>  <a href="#">
-                <img
-                  style={{ maxWidth: "250px", maxHeight: "100px" }}
-                  src={logo}
-                />
-              </a></Navbar.Brand>
-        <Navbar.Toggle aria-controls="responsive-navbar-nav" />
-        <Navbar.Collapse id="responsive-navbar-nav">
-          <Nav className="me-auto align-items-center pt-2">
-            <Nav.Link href="#skills">Skills</Nav.Link>
-            <Nav.Link href="#experience">Experience</Nav.Link>
-            <Nav.Link href="#works">Works</Nav.Link>
-            <Nav.Link href="#contact">Contact</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
-    </>
+    <header className="site-header">
+      <div className="header-inner page-container">
+        <a className="brand-link" href="#top" aria-label="Sakib Patwary, home" onClick={closeMenu}>
+          <img src={logo} alt="Sakib portfolio" />
+        </a>
+        <button
+          className="menu-toggle"
+          type="button"
+          aria-label={menuOpen ? 'Close menu' : 'Open menu'}
+          aria-expanded={menuOpen}
+          aria-controls="site-navigation"
+          onClick={() => setMenuOpen((open) => !open)}
+        >
+          <span /><span />
+        </button>
+        <nav id="site-navigation" className={`site-navigation${menuOpen ? ' is-open' : ''}`} aria-label="Main navigation">
+          {links.map((link) => <a key={link.href} href={link.href} onClick={closeMenu}>{link.label}</a>)}
+          <a className="nav-contact" href="#contact" onClick={closeMenu}>Let’s talk <span aria-hidden="true">↗</span></a>
+        </nav>
+      </div>
+    </header>
   )
 }
 
