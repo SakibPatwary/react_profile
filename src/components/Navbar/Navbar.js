@@ -12,7 +12,7 @@ const Navbar = () => {
           <p className="i-desc">I design and build thoughtful digital experiences.</p>
           <div className="i-title">
             <div className="i-title-wrapper">
-              <div className="i-title-item">Web Developer</div>
+              <div className="i-title-item">Web Designer</div>
               <div className="i-title-item">UI/UX Designer</div>
             </div>
           </div>

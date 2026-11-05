@@ -45,8 +45,8 @@ h1, h2, h3, h4, p { margin-top: 0; }
 .i-intro { margin: 0; color: #53616b; font-size: clamp(1.1rem, 1.8vw, 1.4rem); font-weight: 500; }
 .i-name { margin: -6px 0 0; color: #17232e; font-family: var(--serif); font-size: clamp(5rem, 10vw, 8.6rem); font-weight: 500; line-height: .96; letter-spacing: -.075em; }
 .i-desc { max-width: 430px; margin: 4px 0 0; color: #5f6c75; font-size: clamp(1rem, 1.5vw, 1.2rem); line-height: 1.7; }
-.i-title { height: 38px; margin-top: 4px; }
-.i-title-wrapper { animation: title-rotate 8s ease-in-out infinite; }
+.i-title { height: 38px; margin-top: 4px; overflow: hidden; }
+.i-title-wrapper { display: flex; flex-direction: column; animation: title-rotate 6s cubic-bezier(.65, 0, .35, 1) infinite; will-change: transform; }
 .i-title-item { height: 38px; color: var(--accent); font-size: 1.15rem; font-weight: 650; }
 .hero-actions { display: flex; align-items: center; gap: 12px; margin-top: 18px; }
 .hero-primary, .hero-secondary { display: inline-flex; align-items: center; justify-content: center; min-height: 47px; padding: 0 19px; border: 1px solid var(--accent); border-radius: 6px; font-size: .9rem; font-weight: 650; text-decoration: none; transition: transform .2s ease, background .2s ease, color .2s ease; }
@@ -159,7 +159,11 @@ h1, h2, h3, h4, p { margin-top: 0; }
 .footer-inner a:hover { color: white; }
 
 @keyframes portrait-drift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-5px); } }
-@keyframes title-rotate { 0%, 38% { transform: translateY(0); } 50%, 88% { transform: translateY(-38px); } 100% { transform: translateY(0); } }
+@keyframes title-rotate {
+  0%, 34% { transform: translateY(0); }
+  45%, 84% { transform: translateY(-38px); }
+  100% { transform: translateY(0); }
+}
 @media (max-width: 980px) {
   .skill-grid, .project-grid { grid-template-columns: repeat(2, minmax(0,1fr)); }
 }
